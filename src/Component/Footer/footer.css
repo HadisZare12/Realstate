@@ -1,0 +1,138 @@
+.footer{
+    display: grid;
+    place-items:center;
+    padding: 7rem 2rem;
+    background:#F5FBFF;
+}
+.footer-container{
+    max-width: 1250px;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.footer-col{
+    flex-basis:0;
+    flex-grow:1;
+    max-width:100%;
+}
+.col-content h2{
+   color: #000000;
+   margin-bottom:40px;
+   font-size: 20px;
+   font-weight: 400; 
+}
+.col-content p{
+    color: rgba(0,0,0,0.7);
+}
+.col-content ul{
+    margin-top: 3rem !important;
+}
+.footer-link_1{
+    display: flex;
+   gap:1rem;
+}
+.col-content .footer-link{
+
+    display: flex;
+    flex-direction: column;
+}
+.col-content .footer-link li{
+    margin: 0 30px 0 0 ;
+    color:#919191;
+}
+/*.col-content .footer-link li a{
+    font-size: 15px;
+    font-weight: 400;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:transparent;
+    border-radius: 50%;
+    margin-right: 7px;
+    line-height: 42px !important;
+    border: 1px solid #E8E8E8;
+}*/
+.icon{
+    font-size: 20px;
+    color:#919191;
+    color: #FD955D;
+    margin: 1rem .5rem 0 0;
+
+    
+}
+.footer-link_1 li a .icon1{
+    font-size: 25px;
+    color:#919191;
+    color: #FD955D;
+}
+.col-content ul li{
+    padding-bottom: 10px;
+}
+.col-content ul li a{
+    color:rgba(0,0,0,0.8);
+
+}
+.col-content ul li a span{
+    color: #FD955D;
+    padding-right: 5px;
+    }
+.col-content ul li  span{
+    color:rgba(0,0,0,0.7);
+}
+.col-content ul li{
+    display: table;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+li .number{
+    color: #FD955D;
+}
+li .email{
+    color: #FD955D;
+}
+.col-content ul li {
+    display: table;
+}
+.col-content ul li .footer-icon{
+    display:table-cell;
+    vertical-align: top;
+    width: 40px;
+    font-size: 18px;
+    padding-top: 2px;
+    color: #FD955D;
+}
+.col-content ul li .text{
+    display: table-cell;
+    vertical-align: top;
+}
+.footer-copy{
+    padding: 2rem 0;
+    display: grid;
+    place-items:center;
+}
+.foot-container p{
+    color: #FD955D;
+}
+@media screen and (max-width:768px) {
+.footer{
+    display: flex;
+    padding: 3rem 2rem;
+}
+.footer-row{
+    display: flex;
+    flex-direction: column;
+}
+.footer-col{
+    padding-top: 2rem;
+}
+.icon{
+
+    margin: .3rem .5rem 0 0;  
+}
+    
+}

@@ -1,0 +1,241 @@
+.property{
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    display: grid;
+    place-items:center;
+}
+.center h3{
+    font-size: 42px;
+    font-weight: 500;
+    color:#001d38;
+    font-family: 'Nunito', sans-serif;
+}
+.row{
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.single-prop{
+    width: 350px;
+    border-radius:1rem;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 5%);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.column{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.prop-thumb{
+    position: relative;
+    overflow: hidden;
+}
+.prop-tag{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background:var(--point);
+    padding: 8px 14px;
+    color:#fff;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    z-index: 1;
+}
+.prop-thumb img{
+    width: 350px;
+    vertical-align: middle;
+    transition:.3s;
+}
+.single-prop:hover .prop-thumb img{
+    transform:scale(1.06);
+}
+.prop-content{
+    padding: 25px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.prop-content h3{
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #001d38;
+    font-weight: 500;
+
+}
+.mark span{
+    font-size: 13px;
+    font-weight: 400;
+    color:#919191;
+    margin-left: 5px;
+}
+.amount{
+    display:inline-block;
+    background:#00d363;
+    border-radius:30px;
+    padding: 7px 18px;
+    color:#fff;
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 13px;
+
+}
+.prop-footer{
+    padding: 12px 25px;
+}
+.prop-footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.prop-footer ul li span{
+    color: #001d38;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.prop-footer ul li img{
+    width: 16px;
+}
+.more-prop{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.more-prop .prop-btn{
+    padding: 14px 31px;
+    display:inline-block;
+    border-radius:2rem;
+    font-size: 15px;
+    border:1px solid var(--point);
+    font-weight: 400;
+    letter-spacing:0.5px;
+    color:var(--point);
+    transition:.5s all;
+}
+.more-prop .prop-btn:hover{
+    box-shadow: 0 0 40px 40px var(--point) inset;
+    color: #fff;
+}
+@media screen and (max-width:1156px) {
+
+    .row{
+        grid-template-columns:1fr 1fr;
+    }
+}
+@media screen and (max-width:768px) {
+    .prop{
+        padding-bottom: 2rem;
+    }
+    .row{
+        grid-template-columns:1fr;
+    }
+    .single-prop{
+        width: 500px;
+    }
+    .column{
+       padding-bottom: 2rem; 
+    }
+    .prop-thumb img{
+        width: 500px;
+    }
+    .prop-content{
+        padding: 15px;
+    }
+    .more-prop{
+        padding-top: 0.5rem;
+    }
+}
+@media screen and (max-width:560px){
+   .single-prop{
+    width: 450px;
+   } 
+   .prop-thumb img{
+     width: 450px;
+   }
+   .column{
+    padding-bottom: 1rem;
+   }
+   
+
+}
+@media screen and (max-width:483px){
+  .center h3{
+    font-size: 35px;
+
+  }
+  .single-prop{
+    width: 400px;
+  }
+   .prop-thumb img{
+    width: 400px;
+   }
+   .more-prop .prop-btn{
+    padding: 12px 25px;
+    font-size: 14px;
+   }
+}
+@media screen and (max-width:430px){
+    .single-prop{
+        width: 350px;
+    }
+    .prop-thumb img{
+        width: 350px;
+    }
+    .column{
+        padding: 0 15px;
+    }
+
+}
+@media screen and (max-width:383px){
+    .prop h3{
+        font-size: 28px;
+    }
+    .prop-content h3{
+        font-size: 14px;
+    }
+    .single-prop{
+        width: 300px;
+    }
+    .prop-thumb img{
+        width: 300px;
+    }
+    .column{
+        padding: 0 15px;
+    }
+    .prop-footer ul li span{
+        font-size: 10px;
+        font-weight: 400;
+        margin-left: 3px;
+    }
+    .prop-footer ul li img{
+        width: 14px;
+    }
+
+}
+@media screen and (max-width:321px){
+    .single-prop{
+        width: 270px;
+    }
+    .prop-thumb img{
+        width: 270px;
+    }
+     .column{
+        padding:0 15px;
+    }
+    .prop-footer{
+        padding: 12px 20px;
+    }
+
+}
+@media screen and (max-width:291px){
+    .single-prop{
+        width: 230px;
+    }
+    .prop-thumb{
+        width: 230px;
+    }
+    .prop-content{
+        padding: 10px;
+    }
+
+}
